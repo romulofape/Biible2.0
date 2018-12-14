@@ -1,15 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Biible.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using Biible.Models;
 
 namespace Biible.Data
 {
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+        public DbSet<Personagem> Personagens { get; set; }
+        public DbSet<Curiosidade> Curiosidades { get; set; }
+        public DbSet<Genealogia> Genealogias { get; set; }
+        public DbSet<Outro_Nome> Outros_Nomes { get; set; }
+        public DbSet<PassagemBiblica> Passages_Biblicas { get; set; }
+        public DbSet<Referencia> Referencias { get; set; }
+        public DbSet<Regiao> Regioes { get; set; }
+
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
