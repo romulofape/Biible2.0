@@ -1,7 +1,7 @@
 {
-  "name": "Assist",
+  "name": "Biible",
   "version": "2.5.0",
-  "description": "Angular Admin Template",
+  "description": "Biible - Personagens Bíblicos",
   "private": true,
   "scripts": {
     "ng": "ng",

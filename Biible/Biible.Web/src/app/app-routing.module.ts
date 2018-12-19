@@ -2,12 +2,15 @@ import { NgModule }                     from '@angular/core';
 import { Routes, RouterModule }         from '@angular/router';
 
 import { DefaultLayoutComponent }       from './layouts/default/default.component';
+/* PÁGINAS DO TEMPLATE
 import { BoxedLayoutComponent }         from './layouts/boxed/boxed.component';
 import { DefaultCLayoutComponent }      from './layouts/default-c/default-c.component';
 import { BoxedCLayoutComponent }        from './layouts/boxed-c/boxed-c.component';
 import { ExtraLayoutComponent }         from './layouts/extra/extra.component';
+*/
 
 import { PageDashboardComponent }       from './pages/dashboards/dashboard-1/dashboard.component';
+/*
 import { PageDashboard2Component }      from './pages/dashboards/dashboard-2/dashboard-2.component';
 import { PageDashboard3Component }      from './pages/dashboards/dashboard-3/dashboard-3.component';
 import { PageButtonComponent }          from './pages/material-components/button/button.component';
@@ -40,11 +43,15 @@ import { PageNiFilesComponent }         from './pages/ni-components/file/file.co
 import { PageNiVTimelineComponent }     from './pages/ni-components/v-timeline/v-timeline.component';
 
 import { PageTypographyComponent }      from './pages/typography/typography.component';
+*/
 import { PageNotFoundComponent }        from './pages/not-found/not-found.component';
 
+/*
 import { PageSignIn1Component }         from './pages/extra-pages/sign-in-1/sign-in-1.component';
 import { PageSignIn2Component }         from './pages/extra-pages/sign-in-2/sign-in-2.component';
+*/
 import { PageSignIn3Component }         from './pages/extra-pages/sign-in-3/sign-in-3.component';
+/*
 import { PageSignUp1Component }         from './pages/extra-pages/sign-up-1/sign-up-1.component';
 import { PageSignUp2Component }         from './pages/extra-pages/sign-up-2/sign-up-2.component';
 import { PageForgotComponent }          from './pages/extra-pages/forgot/forgot.component';
@@ -70,11 +77,13 @@ import { PageFormValidationComponent }  from './pages/forms/form-validation/form
 import { PageGoogleMapComponent }       from './pages/maps/google-map/google-map.component';
 import { PageLeafletMapComponent }      from './pages/maps/leaflet-map/leaflet-map.component';
 import { PageWidgetsComponent }         from './pages/widgets/widgets.component';
+*/
 import { PageLayoutsComponent }         from './pages/layouts/layouts.component';
+
 
 const defaultRoutes: Routes = [
   { path: 'dashboard', component: PageDashboardComponent },
-  { path: 'dashboard-2', component: PageDashboard2Component },
+  /*{ path: 'dashboard-2', component: PageDashboard2Component },
   { path: 'dashboard-3', component: PageDashboard3Component },
   { path: 'typography', component: PageTypographyComponent },
   { path: 'widgets', component: PageWidgetsComponent },
@@ -125,6 +134,7 @@ const defaultRoutes: Routes = [
   { path: 'form-validation', component: PageFormValidationComponent },
   { path: 'google-map', component: PageGoogleMapComponent },
   { path: 'leaflet-map', component: PageLeafletMapComponent },
+  */
   { path: 'layouts', component: PageLayoutsComponent },
   { path: '**', component: PageNotFoundComponent },
 ];
@@ -142,13 +152,13 @@ const defaultCRoutes: Routes = [
 ];
 
 const extraRoutes: Routes = [
-  { path: 'sign-in', component: PageSignIn1Component },
+  /*{ path: 'sign-in', component: PageSignIn1Component },*/
   { path: 'sign-in-social', component: PageSignIn3Component },
-  { path: 'sign-up', component: PageSignUp1Component },
+  /*{ path: 'sign-up', component: PageSignUp1Component },
   { path: 'forgot', component: PageForgotComponent },
   { path: 'confirm', component: PageConfirmComponent },
   { path: 'page-404', component: Page404Component },
-  { path: 'page-500', component: Page500Component },
+  { path: 'page-500', component: Page500Component },*/
 ];
 
 export const routes: Routes = [
@@ -162,7 +172,7 @@ export const routes: Routes = [
     component: DefaultLayoutComponent,
     children: defaultRoutes
   },
-  {
+  /*{
     path: 'default-c-layout',
     component: DefaultCLayoutComponent,
     children: defaultCRoutes
@@ -181,7 +191,7 @@ export const routes: Routes = [
     path: 'extra-layout',
     component: ExtraLayoutComponent,
     children: extraRoutes
-  },
+  },*/
   {
     path: '**',
     component: DefaultLayoutComponent,
